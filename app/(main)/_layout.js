@@ -1,4 +1,4 @@
-import { Redirect, Stack } from 'expo-router';
+import { Redirect, Stack, Tabs } from 'expo-router';
 import { useAuth } from '../../context/auth'; // Custom hook from your AuthProvider
 import { ActivityIndicator, View } from 'react-native';
 
@@ -20,5 +20,6 @@ export default function MainLayout() {
     }
 
     // If authenticated, show the app screens
-    return <Stack />;
+    // return <Tabs />;
+    return (<Stack />);
 }
